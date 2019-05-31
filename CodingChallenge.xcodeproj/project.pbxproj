@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5CF65E9229BF7F800F79FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF65E8229BF7F800F79FA9 /* AppDelegate.swift */; };
+		E5CF65EE229BF7F800F79FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CF65EC229BF7F800F79FA9 /* Main.storyboard */; };
+		E5CF65F0229BF7FA00F79FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5CF65EF229BF7FA00F79FA9 /* Assets.xcassets */; };
+		E5CF65F3229BF7FA00F79FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CF65F1229BF7FA00F79FA9 /* LaunchScreen.storyboard */; };
+		E5CF6600229BF8CE00F79FA9 /* ISSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF65FE229BF8CE00F79FA9 /* ISSTabBarController.swift */; };
+		E5CF6604229BFEBF00F79FA9 /* ISSLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6602229BFEBF00F79FA9 /* ISSLocationViewController.swift */; };
+		E5CF6605229BFEBF00F79FA9 /* ISSLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CF6603229BFEBF00F79FA9 /* ISSLocationViewController.xib */; };
+		E5CF660A229BFEE500F79FA9 /* PassengersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6608229BFEE500F79FA9 /* PassengersViewController.swift */; };
+		E5CF660B229BFEE500F79FA9 /* PassengersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CF6609229BFEE500F79FA9 /* PassengersViewController.xib */; };
+		E5CF660F229BFF0E00F79FA9 /* PassTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF660D229BFF0E00F79FA9 /* PassTimesViewController.swift */; };
+		E5CF6610229BFF0E00F79FA9 /* PassTimesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CF660E229BFF0E00F79FA9 /* PassTimesViewController.xib */; };
+		E5CF6614229BFF2B00F79FA9 /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6612229BFF2B00F79FA9 /* UserLocationViewController.swift */; };
+		E5CF6615229BFF2B00F79FA9 /* UserLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CF6613229BFF2B00F79FA9 /* UserLocationViewController.xib */; };
+		E5CF6618229C0E7800F79FA9 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6617229C0E7800F79FA9 /* NetworkingClient.swift */; };
+		E5CF661A229C0E8700F79FA9 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6619229C0E8700F79FA9 /* NetworkingError.swift */; };
+		E5CF661C229C108A00F79FA9 /* ISSAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF661B229C108A00F79FA9 /* ISSAPIServices.swift */; };
+		E5CF661E229C115800F79FA9 /* ISSPositionPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF661D229C115800F79FA9 /* ISSPositionPayload.swift */; };
+		E5CF6620229C11D300F79FA9 /* ISSPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF661F229C11D300F79FA9 /* ISSPosition.swift */; };
+		E5CF6624229C134100F79FA9 /* ISSPassTimePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6623229C134100F79FA9 /* ISSPassTimePayload.swift */; };
+		E5CF6626229C134C00F79FA9 /* ISSPassTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6625229C134C00F79FA9 /* ISSPassTime.swift */; };
+		E5CF662B229C14C900F79FA9 /* PassengersPayloadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF662A229C14C900F79FA9 /* PassengersPayloadResponse.swift */; };
+		E5CF662D229C14F400F79FA9 /* ISSPassenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF662C229C14F400F79FA9 /* ISSPassenger.swift */; };
+		E5CF662F229C161400F79FA9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF662E229C161400F79FA9 /* Location.swift */; };
+		E5CF6631229C253A00F79FA9 /* ISSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6630229C253A00F79FA9 /* ISSLocationManager.swift */; };
+		E5CF6633229C302200F79FA9 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6632229C302200F79FA9 /* Macros.swift */; };
+		E5CF6635229C312A00F79FA9 /* NetworkingClient+ISSAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6634229C312A00F79FA9 /* NetworkingClient+ISSAPIServices.swift */; };
+		E5CF6637229D3BDF00F79FA9 /* ISSPassengersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6636229D3BDF00F79FA9 /* ISSPassengersManager.swift */; };
+		E5CF663E229D962700F79FA9 /* ISSPassTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF663D229D962700F79FA9 /* ISSPassTimeManager.swift */; };
+		E5CF6643229FE22100F79FA9 /* UIAlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6642229FE22100F79FA9 /* UIAlertHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E5CF65E5229BF7F800F79FA9 /* CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CF65E8229BF7F800F79FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5CF65ED229BF7F800F79FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5CF65EF229BF7FA00F79FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5CF65F2229BF7FA00F79FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5CF65F4229BF7FA00F79FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5CF65FE229BF8CE00F79FA9 /* ISSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSTabBarController.swift; sourceTree = "<group>"; };
+		E5CF6602229BFEBF00F79FA9 /* ISSLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocationViewController.swift; sourceTree = "<group>"; };
+		E5CF6603229BFEBF00F79FA9 /* ISSLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ISSLocationViewController.xib; sourceTree = "<group>"; };
+		E5CF6608229BFEE500F79FA9 /* PassengersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersViewController.swift; sourceTree = "<group>"; };
+		E5CF6609229BFEE500F79FA9 /* PassengersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassengersViewController.xib; sourceTree = "<group>"; };
+		E5CF660D229BFF0E00F79FA9 /* PassTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassTimesViewController.swift; sourceTree = "<group>"; };
+		E5CF660E229BFF0E00F79FA9 /* PassTimesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassTimesViewController.xib; sourceTree = "<group>"; };
+		E5CF6612229BFF2B00F79FA9 /* UserLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
+		E5CF6613229BFF2B00F79FA9 /* UserLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserLocationViewController.xib; sourceTree = "<group>"; };
+		E5CF6617229C0E7800F79FA9 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		E5CF6619229C0E8700F79FA9 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		E5CF661B229C108A00F79FA9 /* ISSAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSAPIServices.swift; sourceTree = "<group>"; };
+		E5CF661D229C115800F79FA9 /* ISSPositionPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPositionPayload.swift; sourceTree = "<group>"; };
+		E5CF661F229C11D300F79FA9 /* ISSPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPosition.swift; sourceTree = "<group>"; };
+		E5CF6623229C134100F79FA9 /* ISSPassTimePayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimePayload.swift; sourceTree = "<group>"; };
+		E5CF6625229C134C00F79FA9 /* ISSPassTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTime.swift; sourceTree = "<group>"; };
+		E5CF662A229C14C900F79FA9 /* PassengersPayloadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersPayloadResponse.swift; sourceTree = "<group>"; };
+		E5CF662C229C14F400F79FA9 /* ISSPassenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassenger.swift; sourceTree = "<group>"; };
+		E5CF662E229C161400F79FA9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E5CF6630229C253A00F79FA9 /* ISSLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocationManager.swift; sourceTree = "<group>"; };
+		E5CF6632229C302200F79FA9 /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		E5CF6634229C312A00F79FA9 /* NetworkingClient+ISSAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingClient+ISSAPIServices.swift"; sourceTree = "<group>"; };
+		E5CF6636229D3BDF00F79FA9 /* ISSPassengersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassengersManager.swift; sourceTree = "<group>"; };
+		E5CF663D229D962700F79FA9 /* ISSPassTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassTimeManager.swift; sourceTree = "<group>"; };
+		E5CF6642229FE22100F79FA9 /* UIAlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5CF65E2229BF7F800F79FA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E564FD73229FF56700952F1B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6617229C0E7800F79FA9 /* NetworkingClient.swift */,
+				E5CF6634229C312A00F79FA9 /* NetworkingClient+ISSAPIServices.swift */,
+				E5CF6619229C0E8700F79FA9 /* NetworkingError.swift */,
+				E5CF6616229C0E6100F79FA9 /* APIServices */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E564FD74229FF59600952F1B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6630229C253A00F79FA9 /* ISSLocationManager.swift */,
+				E5CF6636229D3BDF00F79FA9 /* ISSPassengersManager.swift */,
+				E5CF663D229D962700F79FA9 /* ISSPassTimeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E5CF65DC229BF7F800F79FA9 = {
+			isa = PBXGroup;
+			children = (
+				E5CF65E7229BF7F800F79FA9 /* CodingChallenge */,
+				E5CF65E6229BF7F800F79FA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5CF65E6229BF7F800F79FA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF65E5229BF7F800F79FA9 /* CodingChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5CF65E7229BF7F800F79FA9 /* CodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6641229FE21500F79FA9 /* Helper */,
+				E5CF65FD229BF89300F79FA9 /* Models */,
+				E5CF65FB229BF87900F79FA9 /* Services */,
+				E5CF65FA229BF87200F79FA9 /* ViewControllers */,
+				E5CF65E8229BF7F800F79FA9 /* AppDelegate.swift */,
+				E5CF65EC229BF7F800F79FA9 /* Main.storyboard */,
+				E5CF65EF229BF7FA00F79FA9 /* Assets.xcassets */,
+				E5CF65F1229BF7FA00F79FA9 /* LaunchScreen.storyboard */,
+				E5CF65F4229BF7FA00F79FA9 /* Info.plist */,
+			);
+			path = CodingChallenge;
+			sourceTree = "<group>";
+		};
+		E5CF65FA229BF87200F79FA9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6611229BFF1A00F79FA9 /* CheckPoint */,
+				E5CF660C229BFEEC00F79FA9 /* PassTimes */,
+				E5CF6607229BFED400F79FA9 /* Passengers */,
+				E5CF6606229BFEC600F79FA9 /* ISSLocation */,
+				E5CF65FE229BF8CE00F79FA9 /* ISSTabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E5CF65FB229BF87900F79FA9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E564FD74229FF59600952F1B /* Managers */,
+				E564FD73229FF56700952F1B /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E5CF65FD229BF89300F79FA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6629229C148100F79FA9 /* Passengers */,
+				E5CF6622229C131600F79FA9 /* PassTime */,
+				E5CF6621229C130A00F79FA9 /* ISSPosition */,
+				E5CF662E229C161400F79FA9 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5CF6606229BFEC600F79FA9 /* ISSLocation */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6602229BFEBF00F79FA9 /* ISSLocationViewController.swift */,
+				E5CF6603229BFEBF00F79FA9 /* ISSLocationViewController.xib */,
+			);
+			path = ISSLocation;
+			sourceTree = "<group>";
+		};
+		E5CF6607229BFED400F79FA9 /* Passengers */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6608229BFEE500F79FA9 /* PassengersViewController.swift */,
+				E5CF6609229BFEE500F79FA9 /* PassengersViewController.xib */,
+			);
+			path = Passengers;
+			sourceTree = "<group>";
+		};
+		E5CF660C229BFEEC00F79FA9 /* PassTimes */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF660D229BFF0E00F79FA9 /* PassTimesViewController.swift */,
+				E5CF660E229BFF0E00F79FA9 /* PassTimesViewController.xib */,
+			);
+			path = PassTimes;
+			sourceTree = "<group>";
+		};
+		E5CF6611229BFF1A00F79FA9 /* CheckPoint */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6612229BFF2B00F79FA9 /* UserLocationViewController.swift */,
+				E5CF6613229BFF2B00F79FA9 /* UserLocationViewController.xib */,
+			);
+			path = CheckPoint;
+			sourceTree = "<group>";
+		};
+		E5CF6616229C0E6100F79FA9 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF661B229C108A00F79FA9 /* ISSAPIServices.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		E5CF6621229C130A00F79FA9 /* ISSPosition */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF661D229C115800F79FA9 /* ISSPositionPayload.swift */,
+				E5CF661F229C11D300F79FA9 /* ISSPosition.swift */,
+			);
+			path = ISSPosition;
+			sourceTree = "<group>";
+		};
+		E5CF6622229C131600F79FA9 /* PassTime */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6623229C134100F79FA9 /* ISSPassTimePayload.swift */,
+				E5CF6625229C134C00F79FA9 /* ISSPassTime.swift */,
+			);
+			path = PassTime;
+			sourceTree = "<group>";
+		};
+		E5CF6629229C148100F79FA9 /* Passengers */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF662A229C14C900F79FA9 /* PassengersPayloadResponse.swift */,
+				E5CF662C229C14F400F79FA9 /* ISSPassenger.swift */,
+			);
+			path = Passengers;
+			sourceTree = "<group>";
+		};
+		E5CF6641229FE21500F79FA9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF6632229C302200F79FA9 /* Macros.swift */,
+				E5CF6642229FE22100F79FA9 /* UIAlertHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5CF65E4229BF7F800F79FA9 /* CodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5CF65F7229BF7FA00F79FA9 /* Build configuration list for PBXNativeTarget "CodingChallenge" */;
+			buildPhases = (
+				E5CF65E1229BF7F800F79FA9 /* Sources */,
+				E5CF65E2229BF7F800F79FA9 /* Frameworks */,
+				E5CF65E3229BF7F800F79FA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodingChallenge;
+			productName = CodingChallenge;
+			productReference = E5CF65E5229BF7F800F79FA9 /* CodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5CF65DD229BF7F800F79FA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Belkheir Oussama";
+				TargetAttributes = {
+					E5CF65E4229BF7F800F79FA9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E5CF65E0229BF7F800F79FA9 /* Build configuration list for PBXProject "CodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5CF65DC229BF7F800F79FA9;
+			productRefGroup = E5CF65E6229BF7F800F79FA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5CF65E4229BF7F800F79FA9 /* CodingChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5CF65E3229BF7F800F79FA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5CF660B229BFEE500F79FA9 /* PassengersViewController.xib in Resources */,
+				E5CF6615229BFF2B00F79FA9 /* UserLocationViewController.xib in Resources */,
+				E5CF65F3229BF7FA00F79FA9 /* LaunchScreen.storyboard in Resources */,
+				E5CF6605229BFEBF00F79FA9 /* ISSLocationViewController.xib in Resources */,
+				E5CF65F0229BF7FA00F79FA9 /* Assets.xcassets in Resources */,
+				E5CF6610229BFF0E00F79FA9 /* PassTimesViewController.xib in Resources */,
+				E5CF65EE229BF7F800F79FA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5CF65E1229BF7F800F79FA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5CF6618229C0E7800F79FA9 /* NetworkingClient.swift in Sources */,
+				E5CF661C229C108A00F79FA9 /* ISSAPIServices.swift in Sources */,
+				E5CF6631229C253A00F79FA9 /* ISSLocationManager.swift in Sources */,
+				E5CF6604229BFEBF00F79FA9 /* ISSLocationViewController.swift in Sources */,
+				E5CF662D229C14F400F79FA9 /* ISSPassenger.swift in Sources */,
+				E5CF662F229C161400F79FA9 /* Location.swift in Sources */,
+				E5CF6635229C312A00F79FA9 /* NetworkingClient+ISSAPIServices.swift in Sources */,
+				E5CF6626229C134C00F79FA9 /* ISSPassTime.swift in Sources */,
+				E5CF6620229C11D300F79FA9 /* ISSPosition.swift in Sources */,
+				E5CF6614229BFF2B00F79FA9 /* UserLocationViewController.swift in Sources */,
+				E5CF6643229FE22100F79FA9 /* UIAlertHelper.swift in Sources */,
+				E5CF6624229C134100F79FA9 /* ISSPassTimePayload.swift in Sources */,
+				E5CF661A229C0E8700F79FA9 /* NetworkingError.swift in Sources */,
+				E5CF662B229C14C900F79FA9 /* PassengersPayloadResponse.swift in Sources */,
+				E5CF663E229D962700F79FA9 /* ISSPassTimeManager.swift in Sources */,
+				E5CF660F229BFF0E00F79FA9 /* PassTimesViewController.swift in Sources */,
+				E5CF65E9229BF7F800F79FA9 /* AppDelegate.swift in Sources */,
+				E5CF6637229D3BDF00F79FA9 /* ISSPassengersManager.swift in Sources */,
+				E5CF6600229BF8CE00F79FA9 /* ISSTabBarController.swift in Sources */,
+				E5CF6633229C302200F79FA9 /* Macros.swift in Sources */,
+				E5CF661E229C115800F79FA9 /* ISSPositionPayload.swift in Sources */,
+				E5CF660A229BFEE500F79FA9 /* PassengersViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E5CF65EC229BF7F800F79FA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5CF65ED229BF7F800F79FA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5CF65F1229BF7FA00F79FA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5CF65F2229BF7FA00F79FA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5CF65F5229BF7FA00F79FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5CF65F6229BF7FA00F79FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5CF65F8229BF7FA00F79FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BTQFGMWNQT;
+				INFOPLIST_FILE = CodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.CodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5CF65F9229BF7FA00F79FA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BTQFGMWNQT;
+				INFOPLIST_FILE = CodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.CodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5CF65E0229BF7F800F79FA9 /* Build configuration list for PBXProject "CodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5CF65F5229BF7FA00F79FA9 /* Debug */,
+				E5CF65F6229BF7FA00F79FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5CF65F7229BF7FA00F79FA9 /* Build configuration list for PBXNativeTarget "CodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5CF65F8229BF7FA00F79FA9 /* Debug */,
+				E5CF65F9229BF7FA00F79FA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5CF65DD229BF7F800F79FA9 /* Project object */;
+}
