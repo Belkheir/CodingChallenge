@@ -52,10 +52,11 @@ extension NetworkingClient: ISSAPIServices {
 
         self.performRequest(urlString: urlPath, parameters: parameters) { (data, error) in
             if let data = data, data.isEmpty == false {
+
                 do {
                     let payloadResponse = try JSONDecoder().decode(ISSPassengersPayload.self, from: data)
-                    let intersectionPoints = payloadResponse.response
-                    completionHandler(intersectionPoints, nil)
+                    let passTimes = payloadResponse.response
+                    completionHandler(passTimes, nil)
                 } catch  {
                     completionHandler(nil, NetworkingError.modelIntegrityViolation)
                 }
