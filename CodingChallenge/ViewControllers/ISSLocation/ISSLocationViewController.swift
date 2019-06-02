@@ -20,6 +20,9 @@ class ISSLocationViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+    var annotation: MKPointAnnotation!
+    let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 80)
+
     var spacePosition: SpacePosition = .outsideRadius
     let issLocationManager: ISSLocationManager
     var userLocationCoordinates : CLLocationCoordinate2D?
@@ -47,11 +50,12 @@ class ISSLocationViewController: UIViewController, MKMapViewDelegate {
 
         self.issLocationManager.moveISS { [weak self] (spaceShipLocation, error) in
             guard let self = self else { return }
-            if let networkingError = error {
-                UIAlertHelper.displayUIAlert(error: networkingError, from: self)
-                return
-            }
+
             DispatchQueue.main.async {
+                if let networkingError = error {
+                    UIAlertHelper.displayUIAlert(error: networkingError, from: self)
+                    return
+                }
                 self.centerMapOnLocation(location: spaceShipLocation)
             }
             self.notifyObserversIfNeeded(about: spaceShipLocation)
@@ -82,20 +86,21 @@ class ISSLocationViewController: UIViewController, MKMapViewDelegate {
 
 
     func centerMapOnLocation(location: Location) {
+        self.activityIndicator.stopAnimating()
+
         let location = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
-        let annotation = MKPointAnnotation()
-            annotation.coordinate = location
-
-        let locationCoordinates = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
-        let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 80)
-        let region = MKCoordinateRegion(center: locationCoordinates, span: span)
-
-            // make the map track only the latest position of an annotation.
-             let annotations = self.mapView.annotations
-            self.mapView.removeAnnotations(annotations)
-            self.mapView.addAnnotation(annotation)
+        if (annotation == nil) {
+            self.annotation = MKPointAnnotation()
+            self.annotation.coordinate = location
+            let region = MKCoordinateRegion(center: location, span: span)
+            self.mapView.addAnnotation(self.annotation)
             self.mapView.setRegion(region, animated: true)
-            self.activityIndicator.stopAnimating()
+        } else {
+            UIView.animate(withDuration: 1, animations: {
+                // Update annotation coordinate to be the destination coordinate
+                self.annotation?.coordinate = location
+            }, completion: nil)
+        }
 
     }
 

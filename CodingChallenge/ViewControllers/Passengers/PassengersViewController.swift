@@ -43,20 +43,19 @@ class PassengersViewController: UIViewController, UITableViewDelegate, UITableVi
         self.activityIndicator.startAnimating()
         self.issPassengerManager.getAstronostsList { [weak self] (passengers, error) in
             guard let self = self else { return }
-
-            if let networkingError = error {
-                UIAlertHelper.displayUIAlert(error: networkingError, from: self)
-                return
-            }
-            if let passengersList = passengers {
-                self.passengersList = passengersList
-                DispatchQueue.main.async {
-                    self.activityIndicator.stopAnimating()
-                    self.tableView.reloadData()
+            DispatchQueue.main.async {
+                if let networkingError = error {
+                    UIAlertHelper.displayUIAlert(error: networkingError, from: self)
+                    return
+                }
+                if let passengersList = passengers {
+                    self.passengersList = passengersList
+                        self.activityIndicator.stopAnimating()
+                        self.tableView.reloadData()
                 }
             }
+
         }
     }
-
 
 }
